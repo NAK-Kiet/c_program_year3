@@ -4,16 +4,14 @@ int main(){
 
     int integer1 = 0;
     int integer2 = 0;
-
-    int sum = 0;
+    
+    float div = 0;
     // First Integer
-    printf("Enter the First Integer:");
-    scanf("%d",&integer1);
-    // Second Integer
-    printf("Enter the Second Integer:");
-    scanf("%d",&integer2);
+    printf("Enter the two Integers:");
+    scanf("%d %d",&integer1 , &integer2);
+
+
+    div = (float)integer1 / integer2;
     
-    sum = integer1 + integer2;
-    
-    printf("The sum of two integers is: %d\n",sum);
+    printf("The divison of two integers is: %.2f\n" , div);
 }
